@@ -9,6 +9,27 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <!-- Include custom JS file -->
   <script type="text/javascript" src="script.js"></script>
+  <script>
+  const form = document.getElementById('testimonial-form');
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    const response = await fetch('/submit-testimonial', {
+      method: 'POST',
+      body: formData
+    });
+
+    if (response.ok) {
+      alert('Thank you for submitting your testimonial!');
+      form.reset();
+    } else {
+      alert('There was an error submitting your testimonial. Please try again later.');
+    }
+  });
+</script>
 </head>
 
 <body>
@@ -108,5 +129,20 @@
       </div>
     </div>
   </footer>
+  <form id="testimonial-form" action="https://github.com/oapclothingco/testimonial/blob/main/index.dm" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Testimonial:</label>
+      <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </body>
 </html>
