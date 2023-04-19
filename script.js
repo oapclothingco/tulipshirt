@@ -33,3 +33,6 @@ button.addEventListener("click", () => {
   // Add the content to the pop-up window
   popup.document.body.innerHTML = content;
 });
+document.getElementById("review-btn").addEventListener("click", function() {
+  this.style.display = "none";
+});
