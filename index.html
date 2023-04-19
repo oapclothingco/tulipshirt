@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <!-- Include custom CSS file -->
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Include custom JS file -->
+  <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -44,75 +46,83 @@
     <div class="container">
       <h1 class="jumbotron-heading">Tulip Shirt</h1>
       <p class="lead">This stylish shirt is perfect for any occasion.</p>
-      <a href="#" class="btn btn-primary">Buy Now</a>
+      <a href="#" class="btn btn-primary btn-lg" id="cta-btn">Buy Now and Get 10% Off!</a>
+      <p class="lead">Limited time offer. Use code TULIP10 at checkout.</p>
     </div>
   </section>
-
   <section class="py-5 bg-light">
-    <div class="container">
-      <h2>Product Details</h2>
-      <p class="lead">This shirt is made of high-quality cotton and features a vibrant tulip design. It is available in sizes XS to XL.</p>
-      <h2>Reviews</h2>
-      <div class="card">
-        <div class="card-header">
-          <h3>Customer Reviews</h3>
-        </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <div class="card-header">
-                  <h4>John Doe</h4>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">This shirt is amazing! I love the design and the fabric is so soft and comfortable. Definitely worth the money.</p>
-                </div>
+  <div class="container">
+    <h2>Product Details</h2>
+    <p class="lead">This shirt is made of high-quality cotton and features a vibrant tulip design. It is available in sizes XS to XL.</p>
+    <h2>Reviews</h2>
+    <div class="card">
+      <div class="card-header">
+        <h3>Customer Reviews</h3>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-header">
+                <h4>John Doe</h4>
+              </div>
+              <div class="card-body">
+                <p class="card-text">This shirt is amazing! I love the design and the fabric is so soft and comfortable. Definitely worth the money.</p>
               </div>
             </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Jane Smith</h4>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">I ordered this shirt for a pride event and it was a hit! Everyone loved the
-
-please continue with this code for the landing page from exactly where you left off
-design and it fit perfectly. Highly recommend!</p>
-</div>
-</div>
-</div>
-<div class="col-md-4 mb-3">
-<div class="card">
-<div class="card-header">
-<h4>Samuel Lee</h4>
-</div>
-<div class="card-body">
-<p class="card-text">I was a bit hesitant to buy this shirt at first, but I'm so glad I did! It's become one of my favorite pieces in my wardrobe. The colors are so vibrant and it's so comfortable to wear.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-5">
-  <div class="container">
-    <h2>Shipping and Returns</h2>
-    <p class="lead">We offer free shipping on all orders within the US. If you are not satisfied with your purchase, we offer free returns within 30 days of purchase.</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-header">
+                <h4>Jane Smith</h4>
+              </div>
+              <div class="card-body">
+                <p class="card-text">I'm in love with this shirt! The tulip design is so cute and I've gotten so many compliments on it.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-header">
+                <h4>Bob Johnson</h4>
+              </div>
+              <div class="card-body">
+                <p class="card-text">This shirt is a must-have for any fashion-forward individual. The tulip design is unique and eye-catching.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-
-<footer>
+<footer class="py-3 bg-dark">
   <div class="container">
-    <p>&copy; 2023 Out & Proud Apparel</p>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="text-white">Out & Proud Apparel &copy; 2023</p>
+      </div>
+      <div class="col-md-6 text-right">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+          <li class="list-inline-item"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
-
-<!-- Include jQuery and Bootstrap JavaScript files -->
+<!-- Include jQuery and Bootstrap JS files -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Custom script -->
+<script>
+  // Add click event listener to the CTA button
+  document.getElementById("cta-btn").addEventListener("click", function() {
+    // Redirect user to checkout page with discount code applied
+    window.location.href = "https://example.com/checkout?discount=TULIP10";
+  });
+</script>
 </body>
 </html>
