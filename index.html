@@ -1,31 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Out & Proud Apparel</title>
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Include Bootstrap CSS file -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Include custom CSS file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Out & Proud Apparel Logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Out & Proud Apparel Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Shop</a>
@@ -41,29 +37,89 @@
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container text-center">
-      <h1>Welcome to Out & Proud Apparel</h1>
-      <p>Show your pride with our unique and stylish clothing.</p>
-      <a href="https://www.etsy.com/listing/123456789/tulip-shirt" target="_blank" class="btn btn-primary btn-lg">Shop Now</a>
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Welcome to Out & Proud Apparel</h1>
+      <p class="lead">Show your pride with our unique and stylish clothing.</p>
+      <a href="product.html" class="btn btn-primary">Shop Now</a>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="about">
+  <section class="py-5 bg-light">
     <div class="container">
       <h2>About Us</h2>
-      <p>Out & Proud Apparel was founded in 2021 with a mission to create high-quality, fashionable clothing that celebrates the LGBTQ+ community. We believe that clothing is a powerful way to express yourself and show your pride, and we are proud to offer a wide range of styles and sizes for everyone. Our designs are inspired by the diverse and vibrant community we serve, and we are committed to using sustainable and ethical practices in all aspects of our business.</p>
+      <p class="lead">Out & Proud Apparel was founded in 2021 with a mission to create high-quality, fashionable clothing that celebrates the LGBTQ+ community. We believe that clothing is a powerful way to express yourself and show your pride, and we are proud to offer a wide range of styles and sizes for everyone. Our designs are inspired by the diverse and vibrant community we serve, and we are committed to using sustainable and ethical practices in all aspects of our business.</p>
     </div>
   </section>
 
-  <!-- Products Section -->
-  <section class="products">
+  <section class="py-5">
     <div class="container">
       <h2>Our Products</h2>
       <div class="row">
-        <
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="images/product1.jpg" alt="Tulip Shirt">
+            <div class="card-body">
+              <h4 class="card-title">Tulip Shirt</h4>
+              <p class="card-text">This stylish shirt is perfect for any occasion.</p>
+              <a href="product.html" class="btn btn-primary">View Product</a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                </div>
+                <small class="text-muted">$19.99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="images/product2.jpg" alt="Rainbow Hoodie">
+            <div class="card-body">
+              <h4 class="card-title">Rainbow Hoodie</h4>
+              <p class="card-text">Stay cozy and stylish in this rainbow hoodie.</p>
+              <a href="product.html" class="btn btn-primary">View Product</a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                </div>
+                <small class="text-muted">$29.99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="images/product3.jpg" alt="Pride Tank Top">
+            <div class="card-body">
+              <h4 class="card-title">Pride Tank Top</h4>
+              <p class="card-text">Show your pride in this comfortable tank top.</p>
+              <a href="product.html" class="btn btn-primary">View Product</a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                </div>
+                <small class="text-muted">$14.99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="py-3 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">&copy; 2023 Out & Proud Apparel</p>
+  </div>
+</footer>
+
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<!-- Include Bootstrap JS file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
